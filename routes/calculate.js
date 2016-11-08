@@ -32,8 +32,7 @@ router.post('/index', function(req, res, next) {
   var timeInPoop = totalPoopTime * paidPerMinute;
 
   var toCost = timeInPoop;
-  toCost = toCost.toFixed(2);
-  toCost.toLocaleString());
+  toCost = '$' + toCost.toFixed(2);
 
   console.log('$' + toCost);
 

@@ -19,7 +19,8 @@ block content
             label How long does your average poop take?
             input.form-control(name='time', type='number', required='required' placeholder="In minutes" onfocus="this.placeholder = ''" onblur="this.placeholder = 'In minutes'")
           input.btn.btn-default(name='submit', type='submit', index='Calculate' required='required')
-        div#cost #{cost}
+        div#cost
+          p Your earn #{cost} a day!
         hr
         p.footer: #[a(href='#', id='hide') About #[span]]
       #about
